@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badminton Tournament Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- Header with Navigation Bar -->
+     <header>
+        <h1>Badminton Tournament Registration</h1>
+        <nav>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#highlights">Highlights</a></li>
+                <li><a href="#start">Get Started</a></li>
+                <li><a href="#interactive">Interactive</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Game Overview -->
+    <section id="overview">
+        <h2>Game Overview</h2>
+        <p>Welcome to the badminton tournament registration page. Badminton is a racquet sport played using racquets to hit a shuttlecock across a net.</p>
+        <p>It is a sport that requires agility, strength, and precision. The game can be played by two opposing players (singles) or two opposing pairs (doubles).</p>
+    </section>
+
+    <!-- Game Highlights -->
+    <section id="highlights">
+        <h2>Game Highlights</h2>
+        <ul>
+            <li>Olympic Sport since 1992</li>
+            <li>Top players include Lin Dan, Lee Chong Wei, and Saina Nehwal</li>
+            <li>Annual All England Open Badminton Championships</li>
+        </ul>
+    </section>
+
+    <!-- How to Get Started -->
+    <section id="start">
+        <h2>How to Get Started</h2>
+        <p>To register for the tournament, please fill out the form below:</p>
+        <form id="registration-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="singles">Singles</option>
+                <option value="doubles">Doubles</option>
+            </select><br><br>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <!-- Interactive Element -->
+    <section id="interactive">
+        <h2>Interactive Quiz</h2>
+        <button id="start-quiz">Start Quiz</button>
+        <div id="quiz-container" style="display: none;">
+            <p id="quiz-question"></p>
+            <ul id="quiz-options"></ul>
+            <button id="submit-answer">Submit Answer</button>
+            <p id="quiz-result"></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Badminton Tournament. All rights reserved.</p>
+        <p><a href="https://www.worldbadminton.com" target="_blank">Official Badminton Website</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
